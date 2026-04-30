@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="stylesheet-third.css">
+    <title>Третье задание</title>
+</head>
+<body>
+<main class="container">
+    <div class="content">
+        <h1> Contents</h1>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#Overview">Overview</a>
+                    <ul>
+                        <li>
+                            <a href="#Analysis-output">Analysis output</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Prerequisites">Prerequisites</a>
+                    <ul>
+                        <li>
+                            <a href="#Operating-system">Operating system</a>
+                        </li>
+                        <li>
+                            <a href="#Authentication">Authentication</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Installation">Installation</a>
+                </li>
+                <li>
+                    <a href="#Update-productname">Update productname</a>
+                </li>
+                <li>
+                    <a href="#Conduct-an-analysis">Conduct an analysis</a>
+                </li>
+                <li>
+                    <a href="#Troubleshooting">Troubleshooting</a>
+                </li>
+                <li>
+                    <a href="#Uninstallation">Uninstallation</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <h1 id="Overview">Overview</h1>
+        <p class="main-text">
+            Productname is a command-line tool for forgery detection in images.<br> 
+            Supported image file formats:
+            <ul class="custom-list">
+                <li>.jpg</li>
+                <li>.tif</li>
+                <li>.png</li>
+            </ul>
+        </p>
+        
+        <h2 id="Analysis-output">Analysis output</h2>
+        <p class="main-text">
+            Result of an analysis consists of a JSON file with a report (see Listing 1) and a duplicate image with <q>-forgery-mask.png</q> suffix. Outputting image has the same dimensions as a source image and it has a "mask" — color-highlighted regions the tool marks as suspicious (see pic.1).<br>
+            Listing 1 Sample JSON report
+        </p>
+        
+        <div class="quote-block">
+            <q>Можете предоставить пример JSON отчёта?</q>
+        </div>
+        
+        <figure class="custom-figure custom-figure-css">
+            <img src="source-image.jpg" alt="Можете предоставить пример проанализированного изображения к нему?">
+            <figcaption class="fallback-text">Pic.1 Sample picture output</figcaption>
+        </figure>
+        
+        <h1 id="Prerequisites">Prerequisites</h1>
+        <h2 id="Operating-system">Operating system</h2>
+        <p class="main-text">
+            <q>Какие системные требования предъявляются к утилите?</q>
+        </p>
+        
+        <h2 id="Authentication">Authentication</h2>
+        <p class="main-text">
+            Before you proceed to install productname, ensure you have the cipher — a unique string of characters required for license authentication. <q>Как поставляется шифр?</q>
+        </p>
+        
+        <h1 id="Installation">Installation</h1>
+        <p class="main-text">
+            <q>Как установить productname?</q>
+        </p>
+        
+        <h1 id="Update-productname">Update productname</h1>
+        <p class="main-text">
+            <q>Как обновить productname?</q>
+        </p>
+        
+        <h1 id="Conduct-an-analysis">Conduct an analysis</h1>
+        <p class="main-text">
+            Run a console command:
+        </p>
+        <div class="code-block">
+        <p class="code-snippet">
+            %USERPROFILE%/productname path cipher
+        </p>
+        </div>
+        <ul class="custom-list">
+            <li>path — absolute path to the analyzed image;</li>
+            <li>cipher — user's cipher.</li>
+        </ul>
+        
+        <h1 id="Troubleshooting">Troubleshooting</h1>
+        <p class="main-text">
+            <q>Есть ли коды ошибок, сообщения от исключений в работе с productname? Что они означают и какие шаги следует предпринять при их получении? Какие проблемы, не отражённые в кодах ошибок и исключениях, могут возникнуть во время работы с productname и как их решить?</q>
+        </p>
+        
+        <h1 id="Uninstallation">Uninstallation</h1>
+        <p class="main-text">
+            <q>Как удалить утилиту, оставляет ли она за собой файлы для будущей переустановки, как их очистить?</q>
+        </p>
+        
+        <div class="nav-links">
+            <div class="link-left">
+                <a href="second-task.html">🡠 Второе задание</a>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
