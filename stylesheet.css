@@ -11,6 +11,34 @@ body {
     line-height: 1.5;
 }
 
+nav.menu {
+    margin-bottom: 2em;
+    font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    padding-left: 16px;
+}
+
+nav.menu ul li {
+    list-style: none;
+}
+
+nav.menu ul ul li {
+    margin-left: 20px;
+}
+
+nav.menu a {
+    font-size: var(--font-size);
+    font-family: inherit;
+    color: #2563eb;
+    text-decoration: none;
+    line-height: 1.6;
+    display: inline-block;
+}
+
+nav.menu a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
 .container {
     max-width: 100%;
     padding: 0 20px;
@@ -20,6 +48,12 @@ body {
     max-width: 800px;         
     margin: 0 auto;           
     width: 100%;
+}
+
+.nav-container 
+{
+    max-width: 800px;
+    max-height: 800px;
 }
 
 .main-text {
@@ -68,6 +102,27 @@ body {
     gap: 20px;                      
 }
 
+.next-link {
+    max-width: 800px;
+    margin-top: 2em;          /* Вертикальный отступ 2em от предыдущего параграфа */
+    text-align: right;        /* Выравнивание по правому краю */
+}
+
+.next-link a {
+    font-size: 18px;          /* Тот же кегль, что у основного текста */
+    font-weight: 500;
+    color: #2563eb;
+    text-decoration: none;
+    border-bottom: 1px dashed #2563eb;
+    transition: all 0.2s ease;
+    display: inline-block;     /* Чтобы отступы работали корректно */
+}
+
+.next-link a:hover {
+    color: #1d4ed8;
+    border-bottom-color: #1d4ed8;
+    transform: translateX(2px);
+}
 
 .link-left {
     text-align: left;
