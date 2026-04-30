@@ -5,6 +5,8 @@
     --font-size: 18px;
     --text-color: #1f2937;
     --background-color-code: rgb(175, 171, 171);
+    --background-color-tip: rgb(169, 209, 142);
+    --border-radius-block: 16px;
 }
 
 body {
@@ -151,7 +153,37 @@ nav.menu a:hover {
     font-family: 'Lucida Console', 'Lucida Sans Typewriter', 'Courier New', monospace;
     color: #ffffff;
     margin: 20px;
+}
 
+.tip-section {
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+    background-color: var(--background-color-tip);
+    text-align: left;
+    font-size: var(--font-size);
+    border-radius: var(--border-radius-block);     
+    margin: 1em 0;
+    padding: 16px 20px;
+    width: 100%;
+}
+
+.tip-mark {
+    display: inline-block;
+    font-family: inherit;
+    font-size: calc(var(--font-size) + 2px);
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
+.tip-paragraph {
+    margin: 0;
+    font-size: var(--font-size);
+    line-height: 1.5;
+    color: #1f2937;
+    width: 100%;
+}
 
 .nav-links {
     display: flex;
