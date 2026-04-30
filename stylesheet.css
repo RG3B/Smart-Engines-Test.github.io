@@ -13,7 +13,7 @@ body {
 
 nav.menu {
     margin-bottom: 2em;
-    font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    font-family: inherit;
     padding-left: 16px;
 }
 
@@ -103,19 +103,19 @@ nav.menu a:hover {
 }
 
 .next-link {
-    max-width: 800px;
-    margin-top: 2em;          /* Вертикальный отступ 2em от предыдущего параграфа */
-    text-align: right;        /* Выравнивание по правому краю */
+    padding-left: 600px;
+    margin-top: 2em;          
+    text-align: right;       
 }
 
 .next-link a {
-    font-size: 18px;          /* Тот же кегль, что у основного текста */
+    font-size: 18px;          
     font-weight: 500;
     color: #2563eb;
     text-decoration: none;
     border-bottom: 1px dashed #2563eb;
     transition: all 0.2s ease;
-    display: inline-block;     /* Чтобы отступы работали корректно */
+    display: inline-block;    
 }
 
 .next-link a:hover {
